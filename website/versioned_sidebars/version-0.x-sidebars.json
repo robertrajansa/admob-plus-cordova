@@ -1,0 +1,86 @@
+{
+  "docs": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        {
+          "type": "doc",
+          "id": "installation"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Display Ads",
+      "items": [
+        {
+          "type": "doc",
+          "id": "show-banner"
+        },
+        {
+          "type": "doc",
+          "id": "show-interstitial"
+        },
+        {
+          "type": "doc",
+          "id": "show-reward-video"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Guides",
+      "items": [
+        {
+          "type": "doc",
+          "id": "test-ads"
+        },
+        {
+          "type": "doc",
+          "id": "volume-control"
+        },
+        {
+          "type": "doc",
+          "id": "designed-for-families"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Ionic Guides",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ionic"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "API Reference",
+      "items": [
+        {
+          "type": "doc",
+          "id": "ad-request-options"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "Troubleshooting",
+      "items": [
+        {
+          "type": "doc",
+          "id": "faq"
+        }
+      ]
+    }
+  ]
+}

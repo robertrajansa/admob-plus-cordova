@@ -1,0 +1,73 @@
+{
+  "name": "example.playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "postinstall": "tsx scripts/postinstall",
+    "test-android": "nx build && cordova prepare && cd platforms/android && ./gradlew check"
+  },
+  "dependencies": {
+    "@mantine/code-highlight": "^7.8.0",
+    "@mantine/core": "^7.8.0",
+    "@mantine/form": "^7.8.0",
+    "@mantine/hooks": "^7.8.0",
+    "@mantine/nprogress": "^7.8.0",
+    "@preact/signals-react": "^2.0.1",
+    "@tabler/icons-react": "^3.2.0",
+    "lodash": "^4.17.21",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-timeago": "^7.2.0",
+    "wouter": "^3.1.2"
+  },
+  "devDependencies": {
+    "@admob-plus-internal/npm-bin": "workspace:*",
+    "@types/fs-extra": "^11.0.4",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@types/react-timeago": "^4.1.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "admob-plus": "workspace:*",
+    "admob-plus-cordova": "../../packages/cordova",
+    "admob-plus-cordova-native": "../../packages/cordova-native",
+    "admob-plus-cordova-tests": "../../packages/cordova/tests",
+    "admob-plus-cordova-webview-ad": "../../packages/cordova-webview-ad",
+    "cordova": "^12.0.0",
+    "cordova-android": "^12.0.1",
+    "cordova-browser": "^7.0.0",
+    "cordova-ios": "^7.1.0",
+    "cordova-plugin-consent": "../../packages/cordova-consent",
+    "cordova-plus": "^0.9.4",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "fs-extra": "^11.2.0",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9"
+  },
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ],
+    "plugins": {
+      "admob-plus-cordova": {
+        "APP_ID_ANDROID": "ca-app-pub-3940256099942544~3347511713",
+        "APP_ID_IOS": "ca-app-pub-3940256099942544~1458002511"
+      },
+      "admob-plus-cordova-native": {},
+      "admob-plus-cordova-tests": {},
+      "admob-plus-cordova-webview-ad": {},
+      "cordova-plugin-consent": {}
+    }
+  }
+}

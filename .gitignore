@@ -1,0 +1,15 @@
+.DS_Store
+package-lock.json
+*.log
+*.lock
+node_modules/
+
+examples/*/platforms
+examples/*/plugins
+
+website/translated_docs
+website/build/
+website/i18n/*
+/.idea/
+
+.nx/cache

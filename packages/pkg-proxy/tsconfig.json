@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/node18",
+  "compilerOptions": {
+    "composite": true,
+    "noImplicitAny": false,
+    "outDir": "lib",
+    "rootDir": "src",
+    "target": "esnext"
+  },
+  "include": ["src/**/*"]
+}
