@@ -98,12 +98,12 @@ class AdMob : CordovaPlugin() {
         optFloat(ctx.opts, "appVolume")?.let {
             MobileAds.setAppVolume(it)
         }
-        ctx.optBoolean("sameAppKey")?.let {
-            MobileAds.putPublisherFirstPartyIdEnabled(it)
-        }
-        ctx.optBoolean("publisherFirstPartyIDEnabled")?.let {
-            MobileAds.putPublisherFirstPartyIdEnabled(it)
-        }
+        //ctx.optBoolean("sameAppKey")?.let {
+           // MobileAds.putPublisherFirstPartyIdEnabled(it)
+        //}
+        //ctx.optBoolean("publisherFirstPartyIDEnabled")?.let {
+            //MobileAds.putPublisherFirstPartyIdEnabled(it)
+        //}
         MobileAds.setRequestConfiguration(buildRequestConfiguration(ctx.opts))
         configForTestLabIfNeeded(activity)
         ctx.resolve()
